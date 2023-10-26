@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Navigation from '../../Components/Navigation';
 
 const Services = () => {
   return (
     <div>
-      Services
+      <Navigation/>
+      <h1>Services</h1>
     </div>
   )
 }

@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Navigation from '../../Components/Navigation';
 
 const Project = () => {
   return (
     <div>
-      Project
+    <Navigation/>
+    <h1>Project</h1>
     </div>
   )
 }
