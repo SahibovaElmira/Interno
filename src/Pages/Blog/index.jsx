@@ -1,11 +1,12 @@
 import React from 'react'
 
-const HomePage = () => {
+const Blog= () => {
   return (
     <div>
-      HomePage
+      Blog
     </div>
   )
 }
 
-export default HomePage
+export default Blog
+

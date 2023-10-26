@@ -1,12 +1,13 @@
-import React from 'react';
-import HomePage from "./Pages/HomePage";
+import React from "react";
+import Routing from "./Components/Routing";
+// import "./App.css";
 
 const App = () => {
   return (
     <div>
-    <HomePage />
+      <Routing />
     </div>
   );
 };
 
-export default App
+export default App;
