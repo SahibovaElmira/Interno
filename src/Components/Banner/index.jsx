@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./style.module.css";
+import Button from "../Button";
 
 
 const Banner = () => {
@@ -13,6 +14,7 @@ const Banner = () => {
               There are many variations of the passages of lorem Ipsum
               fromavailable,variations of the passages.
             </p>
+            <Button title="Send Now" arrow bg="dark" />
            
           </div>
         </div>
