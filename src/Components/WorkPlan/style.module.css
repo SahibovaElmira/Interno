@@ -3,3 +3,14 @@
     text-align: center;
   }
   
+  .readMoreButton {
+    color: black;
+    margin: 10px 0;
+    display: inline-block;
+    font-weight: 400;
+  }
+  
+  .readMoreButton span {
+    vertical-align: middle;
+    color: #cda274;
+  }
