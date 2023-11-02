@@ -1,11 +1,36 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import Navigation from "../../Components/Navigation";
+import { useParams } from "react-router";
+import axios from "axios";
+import PageBanner from "../../Components/PageBanner";
+import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
+const URL = "http://localhost:3000/WorkPlan/";
 const WorkPlanCardDetail = () => {
-  return (
-    <div>
-      WorkPlanCardDetail
-    </div>
-  )
-}
+  const { id } = useParams();
+  const [plan, setPlan] = useState([]);
 
-export default WorkPlanCardDetail
+  useEffect(() => {
+    axios.get(URL + id).then(({ data }) => {
+      setPlan(data);
+    });
+  }, []);
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      whileInView={{ opacity: 1 }}
+    >
+      <Helmet>
+        <title>Work plan</title>
+      </Helmet>
+      <Navigation />
+      <PageBanner src="../banner1.jpg" page="Work Plan Single" />
+      <h2>{plan.title}</h2>
+      <p>{plan.description}</p>
+    </motion.div>
+  );
+};
+
+export default WorkPlanCardDetail;
