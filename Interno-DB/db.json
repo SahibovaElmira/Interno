@@ -1,0 +1,39 @@
+{
+    "WorkPlan": [
+        {
+            "id": 1,
+            "title": "Project Plan",
+            "description": "There are many variations of the passages of lorem Ipsu, from available majority."
+        },
+        {
+            "id": 2,
+            "title": "Interior Work",
+            "description": "There are many variations of the passages of lorem Ipsu, from available majority."
+        },
+        {
+            "id": 3,
+            "title": "Realization",
+            "description": "There are many variations of the passages of lorem Ipsu, from available majority."
+        }
+    ],
+    "customers": [
+        {
+            "name": "Alyona Jhonson",
+            "avatar": "./public/girl.jpg",
+            "description": "Designer",
+            "address": "England, London"
+        },
+        {
+            "name": "Jhon Simpson",
+            "avatar": "./public/girl2.jpg",
+            "description": "Front-end developer",
+            "address": "England, Edinburgh"
+        },
+        {
+            "name": "Alisa Smith",
+            "avatar": "./public/boy.jpg",
+            "description": "Front-end developer",
+            "address": "Russia,Moscow"
+        }
+    ]
+}
